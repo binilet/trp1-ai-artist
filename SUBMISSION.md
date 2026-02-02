@@ -55,3 +55,22 @@ jobs-sync       Sync status for pending jobs from the API.
     - `style`
     - `provider`
     - `duration`
+
+## adding custom presets - added menzuma preset
+
+ - on `preset/music.py` define a preset like
+  `
+  MENZUMA = MusicPreset(
+    name="menzuma",
+    prompt="""[Ethiopian Islamic Devotional Chant]
+    [Rhythmic Recitation, Spiritual Poetry]
+    [Duff Frame Drum, Handclaps, Unison Voices]
+    [Arabic & Local Language Verses]
+    [Communal Atmosphere, Reverent Energy]
+    Traditional Ethiopian Muslim praise, poetic and uplifting""",
+        bpm=80,
+        mood="spiritual",
+        tags=["menzuma", "ethiopian", "islamic", "devotional"],
+    )
+
+  `
