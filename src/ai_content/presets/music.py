@@ -162,6 +162,21 @@ Lusophone African sound, sensual and hypnotic""",
     tags=["kizomba", "zouk", "african"],
 )
 
+MENZUMA = MusicPreset(
+    name="menzuma",
+    prompt="""[Ethiopian Islamic Devotional Chant]
+[Rhythmic Recitation, Spiritual Poetry]
+[Duff Frame Drum, Handclaps, Unison Voices]
+[Arabic & Local Language Verses]
+[Communal Atmosphere, Reverent Energy]
+Traditional Ethiopian Muslim praise, poetic and uplifting""",
+    bpm=80,
+    mood="spiritual",
+    tags=["menzuma", "ethiopian", "islamic", "devotional"],
+)
+
+
+
 
 # Registry of all presets
 MUSIC_PRESETS: dict[str, MusicPreset] = {
@@ -178,6 +193,7 @@ MUSIC_PRESETS: dict[str, MusicPreset] = {
         SALSA,
         BACHATA,
         KIZOMBA,
+        MENZUMA
     ]
 }
 
